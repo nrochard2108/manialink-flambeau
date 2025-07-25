@@ -1,0 +1,24 @@
+<manialink id="flambeau_anim">
+  <quad id="anim" posn="0 0 -1" sizen="40 40" image="https://dl.dropboxusercontent.com/scl/fi/fbmtcczn5ms81j5wla5kq/flambeau_01.tga" />
+  <script><!--
+    declare Text[] images = [
+      "https://dl.dropboxusercontent.com/scl/fi/fbmtcczn5ms81j5wla5kq/flambeau_01.tga",
+      "https://dl.dropboxusercontent.com/scl/fi/q2mdlhaaisq05hucuu9hr/flambeau_02.tga",
+      "https://dl.dropboxusercontent.com/scl/fi/ar5snjs0r1xyoh334kbfj/flambeau_03.tga",
+      "https://dl.dropboxusercontent.com/scl/fi/q5z3cukm0e8kl5fj93izb/flambeau_04.tga",
+      "https://dl.dropboxusercontent.com/scl/fi/e2o9doljr2e2vmpdnz6kt/flambeau_05.tga",
+      "https://dl.dropboxusercontent.com/scl/fi/p3ma6xzpkl9brmuxut6j3/flambeau_06.tga",
+      "https://dl.dropboxusercontent.com/scl/fi/1n4gh6xkogbsk0lqg4vrq/flambeau_07.tga",
+      "https://dl.dropboxusercontent.com/scl/fi/82wmrv0gyfodn2lfw8jmt/flambeau_08.tga",
+      "https://dl.dropboxusercontent.com/scl/fi/so86h792t23chl1v63o5d/flambeau_09.tga",
+      "https://dl.dropboxusercontent.com/scl/fi/aj0j2tyvv70xfn4u4olu1/flambeau_10.tga"
+    ];
+
+    while (True) {
+      for (Integer i = 0; i < images.count; i++) {
+        await 100ms;
+        Page.GetFirstChild("anim").Image = images[i];
+      }
+    }
+  --></script>
+</manialink>
